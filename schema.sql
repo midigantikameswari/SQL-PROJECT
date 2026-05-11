@@ -1,4 +1,5 @@
 create database company_db
+  
 create table locations(
 location_id int primary key,
 city varchar(50),
@@ -6,7 +7,9 @@ state_name varchar(50)
 );
 alter table locations add country varchar(50);
 select*from locations
-
+  
+----
+  
 create table departments(
 department_id int primary key,
 department_name varchar(50),
@@ -14,6 +17,8 @@ location_id int,
 foreign key(location_id) 
 references locations(location_id))
 select*from departments
+
+----
 
 create table employees(
 emp_id int primary key,
