@@ -1,12 +1,4 @@
-﻿
-
-
-
-
-           
-
-
-                   BASIC LEVEL 
+﻿ BASIC LEVEL 
 	  
 1)Display all employees.
 select*from employees
@@ -50,7 +42,8 @@ select emp_name,hire_date
 from employees
 order by hire_date desc
 
-                        INTERMEDIATE LEVEL
+                        
+						INTERMEDIATE LEVEL
 
 11)Count total employees.
 select count(*) as total_emp
@@ -101,7 +94,10 @@ on l.location_id=d.location_id
 join employees e
 on e.department_id=d.department_id
 
-                       ----JOIN MASTER ----
+                      
+					   
+					   ----JOIN MASTER ----
+					   
 21)Show employee name, department name, city.
 select e.emp_name,d.department_name,l.city
 from locations l
@@ -174,7 +170,9 @@ on e.department_id=d.department_id
 join locations l
 on l.location_id=d.location_id
 
-                   ADVANCED LEVEL
+                  
+				   ADVANCED LEVEL
+				   
 31)Find employees earning more than department average salary.
 select emp_name,salary
 from employees e
